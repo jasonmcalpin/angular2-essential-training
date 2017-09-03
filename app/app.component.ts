@@ -2,6 +2,8 @@
  * Starting component.
  * This is the component that is first run based on bootstrap in the main module. 
  * 
+ * A component is a dorective with a view.
+ * 
  */
 
 import { Component } from '@angular/core';
