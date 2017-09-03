@@ -24,7 +24,21 @@ import { Component } from '@angular/core';
   templateUrl: 'app/app.component.html',
   styleUrls: ['app/app.component.css']
 })
-export class AppComponent { }
+export class AppComponent { 
+  onMediaItemDelete(mediaItem){
+    console.log('deleted:'+ mediaItem.name);
+  }
+
+  firstMediaItem = {
+    id: 1,
+    name: "Firefly",
+    medium: "series",
+    category: "Science Fiction",
+    year: 2010,
+    watchedOn: 1294166565384,
+    isFavorite: false
+  }
+}
 
 /**
  * should use dashes in new element names and be prefixed with name of app
